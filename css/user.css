@@ -12,3 +12,24 @@
 .account-forms-container {
   padding-left: 20px;
 }
+
+.user-profile-container, #user-message {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-size: .9rem;
+  font-weight: 700;
+  margin: 10px 0;
+}
+
+.user-profile-container > h4 {
+  margin: 10px 0px;
+}
+
+.user-profile-container > * {
+  width: fit-content;
+}
+
+#profile-name, #profile-username, #profile-created-at {
+  font-weight: lighter;
+}

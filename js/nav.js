@@ -19,6 +19,8 @@ $body.on("click", "#nav-all", navAllStories);
 function navLoginClick(evt) {
   console.debug("navLoginClick", evt);
   hidePageComponents();
+  $loginForm.trigger("reset");
+  $signupForm.trigger("reset");
   $loginForm.show();
   $signupForm.show();
 }
@@ -30,6 +32,7 @@ $navLogin.on("click", navLoginClick);
 function updateNavOnLogin() {
   console.debug("updateNavOnLogin");
   $(".main-nav-links").show();
+  $(".account-forms-container").hide();
   $navLogin.hide();
   $navLogOut.show();
   $navUserProfile.text(`${currentUser.username}`).show();
@@ -41,6 +44,3 @@ function navStoryFormOnClick() {
 }
 
 $navSubmit.on("click", navStoryFormOnClick);
-
-
-

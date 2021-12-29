@@ -106,6 +106,12 @@ form > hr {
   width: 70px;
 }
 
+.error {
+  font-size: 0.9rem;
+  font-weight: lighter;
+  margin: 5px 0px 0px 80px;
+  color: #ff6600;
+}
 
 /* responsive queries for tightening things up for mobile. */
 

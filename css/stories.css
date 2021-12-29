@@ -38,6 +38,10 @@
   display: block;
 }
 
+.edit-story {
+  color: #ff6600;
+}
+
 .star {
   visibility: hidden;
   cursor: pointer;
@@ -52,4 +56,12 @@
 .star:checked:before {
  content: "\2605";
  position: absolute;
+}
+
+.fa-edit {
+  margin-left: 8px;
+}
+
+.fa-trash-alt:hover, .fa-edit:hover {
+  color: #ff6600;
 }
