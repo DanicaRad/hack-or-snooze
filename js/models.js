@@ -47,6 +47,11 @@ class StoryList {
    *  - returns the StoryList instance.
    */
 
+  //  const response = await axios({
+  //   url: `https://hack-or-snooze-v3.herokuapp.com/stories`,
+  //   method: "GET", params:{skip: 25}
+  // });
+
   static async getStories() {
     // Note presence of `static` keyword: this indicates that getStories is
     //  **not** an instance method. Rather, it is a method that is called on the
